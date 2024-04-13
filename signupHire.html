@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Hire - Upwork Clone</title>
+    <link rel="stylesheet" href="hire.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <h1>Upwork</h1>
+        </div>
+        <div class="form-container">
+          <div class="form-header">
+            <h2>Sign up to hire talent</h2>
+            <button id="talent-button" class="talent-button"><a href="signup.html">Apply as talent</a></button>
+          </div>
+          <form id="hire-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Work email address" required>
+            <input type="password" placeholder="Password (8 or more characters)" required>
+            <select required>
+              <option value="" disabled selected>Country</option>
+              <option value="Algiria">Algiria</option>
+              <option value="Bahamas">Bahamas</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Egypt">Egypt</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+              <option value="Hungary">Hungary</option>
+              <option value="India">India</option>
+              <option value="Japan">Japan</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Libya">Libya</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Nepal">Nepal</option>
+              <option value="Oman">Oman</option>
+              <option value="Philippines">Philippines</option>
+              <option value="Qatar">Qatar</option>
+              <option value="Russia">Russia</option>
+              <option value="South Korea">South Korea</option>
+              <option value="Turkey">Turkey</option>
+              <option value="USA">USA</option>
+              <option value="Vietnam">Vietnam</option>
+              <option value="Wales">Wales</option>
+              <option value="Yemen">Yemen</option>
+              <option value="Zimbabwe">Zimbabwe</option>
+              <!-- Add more country options here -->
+            </select>
+            <button type="submit">Create my account</button>
+          </form>
+          <form id="talent-form" style="display: none;">
+            <input type="text" placeholder="Last name" required>
+            <button class="google-button">Continue with Google</button>
+            <button class="apple-button">Continue with Apple</button>
+            <div class="checkbox">
+              <input type="checkbox" id="email-checkbox" required>
+              <label for="email-checkbox">Send me emails with tips on how to find talent that fits my needs.</label>
+            </div>
+            <p class="terms">Yes, I understand and agree to the Upwork Terms of Service, including the User Agreement and Privacy Policy.</p>
+            <button type="submit">Create my account</button>
+          </form>
+        </div>
+      </div>
+      <script src="hire.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Upwork Clone</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="container">
+        <form id="signup-form">
+            <h2>Sign up to find work you love</h2>
+            <button type="button" id="continue-with-apple">Continue with Apple</button>
+            <button type="button" id="continue-with-google">Continue with Google</button>
+            <input type="text" id="first-name" placeholder="First name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password (8 or more characters)" required>
+            <input type="text" id="country" value="India" readonly required>
+            <input type="checkbox" id="send-emails" checked>
+            <label for="send-emails">Send me helpful emails to find rewarding work and job leads.</label>
+            <button type="submit">Create my account</button>
+            <p>Already have an account? <a href="login.html">Log In</a></p>
+            <p>Here to hire talent? <a href="signupHire.html">Join as a Client</a></p>
+          </form>
+          <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

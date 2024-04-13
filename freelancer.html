@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancers - Upwork Clone</title>
+    <link rel="stylesheet" href="freelancer.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Find Freelancers</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Search freelancers...">
+            <button class="btn">Search</button>
+        </div>
+        <div class="filter-bar">
+            <label for="skills">Skills:</label>
+            <select id="skills">
+                <option value="">All</option>
+                <option value="web-development">Web Development</option>
+                <option value="graphic-design">Graphic Design</option>
+                <!-- Add more skills options here -->
+            </select>
+            <label for="location">Location:</label>
+            <select id="location">
+                <option value="">All</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <!-- Add more location options here -->
+            </select>
+        </div>
+        <div class="freelancer-list">
+            <div class="freelancer-card">
+                <img src="freelancer1.jpg" alt="Freelancer 1">
+                <div class="info">
+                    <h3>John Doe</h3>
+                    <p>Web Developer</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus leo eget lectus cursus malesuada.</p>
+                    <a href="#">View Profile</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <!-- Add more freelancer cards here -->
+        </div>
+    </div>
+</body>
+</html>
